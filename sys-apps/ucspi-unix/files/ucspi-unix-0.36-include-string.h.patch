@@ -1,0 +1,20 @@
+--- a/ucspi-unix-0.36/unixclient.c
++++ b/ucspi-unix-0.36/unixclient.c
+@@ -7,6 +7,7 @@
+ #include <sys/un.h>
+ #include <sys/wait.h>
+ #include <unistd.h>
++#include <string.h>
+ 
+ extern void setup_env(int, const char*);
+ 
+--- a/ucspi-unix-0.36/unixserver.c
++++ b/ucspi-unix-0.36/unixserver.c
+@@ -8,6 +8,7 @@
+ #include <sys/wait.h>
+ #include <unistd.h>
+ #include <sysdeps.h>
++#include <string.h>
+ 
+ extern void setup_env(int, const char*);
+ 
