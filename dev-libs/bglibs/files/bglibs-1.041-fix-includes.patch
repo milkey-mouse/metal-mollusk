@@ -1,0 +1,20 @@
+--- a/bglibs-1.104/net/bindu.c
++++ b/bglibs-1.104/net/bindu.c
+@@ -21,6 +21,7 @@
+ #include <sys/socket.h>
+ #include <sys/un.h>
+ #include <unistd.h>
++#include <string.h>
+ #include "socket.h"
+ 
+ /** Bind a UNIX domain address (path) to a socket. */
+--- a/bglibs-1.104/net/connectu.c
++++ b/bglibs-1.104/net/connectu.c
+@@ -21,6 +21,7 @@
+ #include <sys/socket.h>
+ #include <sys/un.h>
+ #include <unistd.h>
++#include <string.h>
+ #include "socket.h"
+ 
+ /** Make an UNIX domain connection. */
