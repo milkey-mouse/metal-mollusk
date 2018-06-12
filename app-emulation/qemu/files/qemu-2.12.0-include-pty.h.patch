@@ -1,0 +1,11 @@
+--- a/util/qemu-openpty.c
++++ b/util/qemu-openpty.c
+@@ -49,7 +49,8 @@
+ # include <stropts.h>
+ #else
+ # include <termios.h>
++# include <pty.h>
+ #endif
+ 
+ #ifdef __sun__
+ /* Once Solaris has openpty(), this is going to be removed. */
